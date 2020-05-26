@@ -9,14 +9,26 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className="title">TODAY-I-LEARNED</h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+         Welcome to my personal blog. Here I write about anything and everything cool and interesting that i learn daily.
         </p>
+        </main>
+        <p text-align="left" justify-content="left">
+        <br/>It serves two purposes:<br/>
+          <ul>
+            <li>Keeps me motivated to learn daily.</li>
+            <li>Helps people who want to learn something in a layman's language</li>
+          </ul>
+        </p>
+        <p className="card">
+          <h3>Date: 25 May, 2020</h3>
+          <br/>
+          <h4>Topic: Git CLI</h4>
 
+        </p>
+        {/* <main>
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>Documentation &rarr;</h3>
@@ -46,17 +58,16 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </main> */}
 
       <footer>
-        <a
+        {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+        > */}
+          Made by Kartik
+        {/* </a> */}
       </footer>
 
       <style jsx>{`
@@ -64,13 +75,12 @@ export default function Home() {
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
+          background: #f1f3f5;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
         }
 
         main {
-          padding: 5rem 0;
+          padding: 1rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -116,7 +126,7 @@ export default function Home() {
         .title {
           margin: 0;
           line-height: 1.15;
-          font-size: 4rem;
+          font-size: 3rem;
         }
 
         .title,
