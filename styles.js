@@ -2,15 +2,14 @@ import styled from "@emotion/styled"
 export const Nav = styled("div")`
   & > * {
     margin-left: 1em;
-    color: white;
   }
-  background: black;
-  padding: 1em;
-  height: 2em;
-  display: flex;
-  align-items: center;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Fira Sans' sans-serif;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
 `
 export const PageBody = styled("div")`
   width: 100%;
-  height: 100%;
-  padding: 2em;`
+  height: 100%;`

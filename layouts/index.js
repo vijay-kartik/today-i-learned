@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
           <a>Home</a>
         </Link>
         <Link href="/about">
-          <a>About Website</a>
+          <a>About</a>
         </Link>
       </Nav>
       <PageBody>{children}</PageBody>
