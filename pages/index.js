@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Layout from '../layouts'
 
 export default function Home() {
   return (
+    <Layout>
     <div className="container">
       <Head>
         <title>Create Next App</title>
@@ -15,19 +17,21 @@ export default function Home() {
          Welcome to my personal blog. Here I write about anything and everything cool and interesting that i learn daily.
         </p>
         </main>
-        <p text-align="left" justify-content="left">
+        <p className="sub_text" text-align="left" justify-content="left">
         <br/>It serves two purposes:<br/>
           <ul>
             <li>Keeps me motivated to learn daily.</li>
             <li>Helps people who want to learn something in a layman's language</li>
           </ul>
         </p>
+        <a href="/2020may25">
         <p className="card">
+          
           <h3>Date: 25 May, 2020</h3>
           <br/>
-          <h4>Topic: Git CLI</h4>
-
+          <h4>Topic: Git CLI concepts</h4>
         </p>
+        </a>
         {/* <main>
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -124,6 +128,7 @@ export default function Home() {
         }
 
         .title {
+          font-family: 'Fira Sans' sans-serif;
           margin: 0;
           line-height: 1.15;
           font-size: 3rem;
@@ -164,6 +169,7 @@ export default function Home() {
           padding: 1.5rem;
           text-align: left;
           color: inherit;
+          background: #9eaab6;
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
@@ -198,6 +204,17 @@ export default function Home() {
             flex-direction: column;
           }
         }
+        .sub_text {
+          margin: 1rem;
+          flex-basis: 45%;
+          padding: 1.5rem;
+          text-align: left;
+          color: inherit;
+          background: #f8f9fa;
+          text-decoration: none;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+        }
       `}</style>
 
       <style jsx global>{`
@@ -215,5 +232,6 @@ export default function Home() {
         }
       `}</style>
     </div>
+    </Layout>
   )
 }
