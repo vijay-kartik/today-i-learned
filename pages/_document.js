@@ -11,11 +11,11 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap" rel="stylesheet"/>
                 </Head>
                 <body bgcolor="#f8f9fa">
                     <Main />
                     <NextScript />
+                    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
                 </body>
             </Html>
         )
